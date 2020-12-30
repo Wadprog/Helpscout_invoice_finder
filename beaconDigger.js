@@ -51,7 +51,12 @@ function searchOrderNumber(document) {
     if (Array.isArray(BeaconHistoryTimelineListItem)) {
       for (let beacon of BeaconHistoryTimelineListItem) {
         var order = getOrderFromAnchorsInBeacon(beacon)
-        if (order != NO_ORDER) return order
+        if (
+          order != NO_ORDER &&
+          parseInt(order.toString()[0]) == 1 &&
+          parseInt(order.toString()[1]) < 3
+        )
+          return order
       }
       return NO_ORDER
     } else {

@@ -20,7 +20,7 @@ module.exports = Object.freeze({
   HTTP_METHOD_DELETE: 'delete',
   BASE_URL: 'https://api.helpscout.net/v2/conversations/',
   THREADS_BASE_URL:
-    ' https://api.helpscout.net/v2/conversations?_embeded=threads&mailbox=178750&status=active&tag=buying',
+    ' https://api.helpscout.net/v2/conversations?_embeded=threads&mailbox=178750&status=active&sortOrder=asc&query=(body:"Beacon")',
   MINIMUM_API_LIMIT: 2,
   NO_ORDER: undefined,
   REMAINING_CALL: 'x-ratelimit-remaining-minute',
