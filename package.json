@@ -1,0 +1,15 @@
+{
+  "name": "beacon_finder",
+  "version": "1.0.0",
+  "description": "Find invoice id on the page then update the invoice id field",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Wadson Vaval",
+  "license": "MIT ",
+  "dependencies": {
+    "helpscout-2.0": "^1.1.5",
+    "request": "^2.88.2"
+  }
+}
